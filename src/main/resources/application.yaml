@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: "camelTest"
+  kafka:
+    consumer:
+      group-id: 1
+
+
+camel:
+  component:
+    kafka:
+      brokers:
+        - localhost:9092
+  springboot:
+    main-run-controller: true
+
+app:
+  role-filtering:
+    level: USER
+
+
